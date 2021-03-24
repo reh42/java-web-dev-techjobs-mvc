@@ -16,7 +16,7 @@
         - add add css "job-list" to the table
         - construct one table.
         each job should be in a separate row with fields on separate lines.-->
-    <table class="job-listing">
+    <table th:fragment = "displayJobs" class="job-listing">
 
         <th:block th:each="job: ${jobs}">
             <tr>
